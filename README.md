@@ -11,7 +11,8 @@ backend services, and a RabbitMQ message broker) to it.
 - A new resource group.
 - An AKS cluster (`azurerm_kubernetes_cluster.app`) with:
   - Autoscaling default node pool, min `1` / max `3` nodes.
-  - `Standard_B2s` VM size.
+  - `Standard_B2s_v2` VM size (the plain `Standard_B2s` SKU is not enabled
+    for this Azure for Students subscription in `canadacentral`).
   - `SystemAssigned` managed identity.
   - The latest available Kubernetes version for the target region
     (looked up via the `azurerm_kubernetes_service_versions` data source).

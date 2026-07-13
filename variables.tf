@@ -25,7 +25,7 @@ variable "dns_prefix" {
 variable "vm_size" {
   description = "VM size used for the AKS default node pool."
   type        = string
-  default     = "Standard_B2s"
+  default     = "Standard_B2s_v2"
 }
 
 variable "min_node_count" {
